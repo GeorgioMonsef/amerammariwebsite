@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../app/globals.css"; /
+import "../app/globals.css"; // Import global styles
 
 export const metadata = {
     title: "Personal Website",
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </head>
         <body className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
         {/* Header */}
+        <Header />
 
         <main className="flex-1 container mx-auto px-4 py-6">
             {children}
